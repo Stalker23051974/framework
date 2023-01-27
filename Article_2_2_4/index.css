@@ -1,0 +1,34 @@
+body {
+  background-color: yellow;
+}
+
+td, th {
+  border: 2px solid black;
+}
+
+#green {
+  background-color: green;
+  width: 100vw;
+}
+
+#aqua {
+  background-color: aqua;
+  height: 4vh;
+}
+
+#blue {
+  background-color: blue;
+  height: 76vh;
+}
+
+#magenta {
+  background-color: magenta;
+}
+
+#orange {
+  background-color: orange;
+}
+
+#green, #orange {
+  height: 7vh;
+}

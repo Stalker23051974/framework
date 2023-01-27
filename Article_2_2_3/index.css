@@ -1,0 +1,45 @@
+body {
+  height: 100vh;
+  background-color: yellow;
+}
+
+.group {
+  display: flex;
+  height: 65%;
+}
+
+[_pos="block10"] {
+  height: 10%;
+  background-color: aqua;
+}
+
+[_pos="block15"] {
+  height: 15%;
+}
+
+body, div:not(.group) {
+  border: 2px solid black;
+}
+
+div:not(.group) {
+  text-align: center;
+  margin: 0.1%;
+}
+
+.group div:nth-child(1) {
+  background-color: blue;
+  width: 10%;
+}
+
+.group div:nth-child(2) {
+  background-color: magenta;
+  width: 90%;
+}
+
+body:first-child {
+  background-color: green;
+}
+
+[_pos="block15"]:nth-child(2) {
+  background-color: orange;
+}
