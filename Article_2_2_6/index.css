@@ -1,0 +1,18 @@
+body {
+  width: 100%;
+}
+
+table {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 1vw;
+}
+
+td {
+  border: 1px dotted #c1c1c1;
+}
+
+
+tr td:nth-child(1), tr td:nth-child(2) {
+  width: 50%;
+}
