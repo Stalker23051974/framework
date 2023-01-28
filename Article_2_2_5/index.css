@@ -1,0 +1,25 @@
+body {
+  width: 100vw;
+  padding-top: 10vw;
+}
+
+body > div {
+  padding: 3vw;
+  width: 50vw;
+  margin-left: 25vw;
+  background-color: #d1c7b4;
+}
+
+.right {
+  width: 30%;
+  margin-left: 70%;
+}
+
+.title {
+  text-align: center;
+  margin-top: 3vw;
+}
+
+table {
+  width: 100%;
+}
