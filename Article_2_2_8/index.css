@@ -1,0 +1,86 @@
+body {
+  background-color: lightgray;
+}
+
+form {
+  margin-top: 10vh;
+  margin-left: 20vw;
+  width: 60vw;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 6px;
+  box-shadow: 12px 12px 2px 1px darkgrey;
+}
+
+label {
+  width: 30%;
+}
+
+.left {
+  margin-left: -12px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  margin: 16px 0 16px 0;
+}
+
+.separator {
+  border-bottom: 1px solid darkgray;
+  margin: 30px 0 30px 0;
+}
+
+form > div {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.col, .col2 {
+  width: 33.3333%;
+  display: flex;
+}
+
+.col {
+  padding-left: 16px;
+}
+
+.fill100 {
+  width: 70%;
+}
+
+[type="checkbox"], select {
+  margin-left: -6px;
+}
+
+[type="radio"] {
+  margin-left: 40%;
+  margin-top: -12px;
+  width: 16px;
+}
+
+select {
+  width: 67%;
+}
+
+h2, .container {
+  width: 100%;
+  text-align: center;
+}
+
+[type="text"], [type="date"], select {
+  padding: 6px;
+  font-style: italic;
+  border-radius: 6px;
+  border: 1px solid darkgray;
+}
+
+[type="submit"] {
+  background-color: blue;
+  color: white;
+  border: 1px solid lightblue;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 6px;
+}

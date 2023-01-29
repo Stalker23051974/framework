@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My sixth page</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<form method="post">
+    <div>
+        <h2>Анкета пользователя</h2>
+        <div class="row">
+            <span class="container">
+                <input type="file" name="file" id="file">
+            </span>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="name">Имя:</label>
+                <input type="text" class="fill100" name="name" id="name">
+            </div>
+            <div class="col">
+                <label for="patronymic">Отчество:</label>
+                <input type="text" class="fill100" name="patronymic" id="patronymic">
+            </div>
+            <div class="col">
+                <label for="surname">Фамилия:</label>
+                <input type="text" class="fill100" name="surname" id="surname">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Ваш пол:</label>
+                <div class="col">
+                    <label class="left">Мужской</label>
+                    <input type="radio" name="gender" value="1" class="fill100">
+                </div>
+                <div class="col">
+                    <label class="left">Женский</label>
+                    <input type="radio" name="gender" value="2" class="fill100">
+                </div>
+            </div>
+            <div class="col">
+                <label for="date">Д/рождения:</label>
+                <input type="date" class="fill100" name="date" id="date">
+            </div>
+            <div class="col">
+                <label for="place">Место:</label>
+                <input type="text" class="fill100" name="place" id="place">
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="row">
+            <div class="col">
+                <label for="married">В браке:</label>
+                <input type="checkbox" name="married" id="married">
+            </div>
+            <div class="col2">
+                <label for="children">Кол-во детей:</label>
+                <select id="children" name="children">
+                    <option value="0">Нет детей</option>
+                    <option value="1">Один ребенок</option>
+                    <option value="2">Двое детей</option>
+                    <option value="3">Трое детей</option>
+                    <option value="4">Больше трех детей</option>
+                </select>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="row">
+            <div class="col">
+                <label for="work">Работаю:</label>
+                <select name="work" id="work">
+                    <option>Не работаю</option>
+                    <option>Проектная работа</option>
+                    <option>Работаю официально</option>
+                    <option>Работаю не официально</option>
+                </select>
+            </div>
+            <div class="col2">
+                <label for="income">Доход:</label>
+                <select id="income" name="income">
+                    <option value="0">Менее 10`000</option>
+                    <option value="1">Менее 30`000</option>
+                    <option value="2">Менее 50`000</option>
+                    <option value="3">Менее 70`000</option>
+                    <option value="4">Менее 100`000</option>
+                    <option value="5">Более 100`000</option>
+                    <option value="6">Более 200`000</option>
+                    <option value="7">Более 300`000</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="house">Квартира:</label>
+                <input type="checkbox" name="house" id="house">
+            </div>
+            <div class="col2">
+                <label for="vacation">Дача:</label>
+                <input type="checkbox" name="vacation" id="vacation">
+            </div>
+        </div>
+        <div class="row">
+            <span class="container">
+                <input type="submit" value="Отправить">
+            </span>
+        </div>
+    </div>
+</form>
+</body>
+</html>
