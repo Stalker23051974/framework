@@ -1,0 +1,12 @@
+td {
+  border: 1px dotted #c1c1c1;
+  padding: 16px;
+}
+
+tr td:nth-child(1) {
+  background-color: lightgreen;
+}
+
+td:nth-child(even) {
+  background-color: lightyellow;
+}
