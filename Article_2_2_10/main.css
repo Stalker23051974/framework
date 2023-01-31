@@ -1,0 +1,107 @@
+table {
+  width: 100vw;
+}
+
+#head {
+  height: 90px;
+  font-size: 32px;
+  text-shadow: 12px 6px 7px black;
+  display: flex;
+}
+
+#head > div:nth-child(1) {
+  width: 10%;
+}
+
+#head > div:nth-child(2) {
+  width: 90%;
+  text-align: center;
+}
+
+#head img {
+  width: 60px;
+  margin-left: calc(50% - 30px);
+}
+
+#menu {
+  height: 60px;
+  display: flex;
+}
+
+#imageBlock {
+  width: 120px;
+}
+
+#images {
+  display: grid;
+}
+
+#images img {
+  width: 100px;
+  margin: 10px;
+}
+
+#content {
+  box-shadow: 14px 14px 20px 20px lightgrey;
+  height: 60vh;
+  width: 90%;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 6px;
+}
+
+#footer {
+  display: flex;
+  padding: 10px 50px 10px 50px;
+}
+
+#footer div {
+  width: 50%;
+}
+
+#footer div:nth-child(2) {
+  text-align: right;
+}
+
+#menu > div {
+  width: 25%;
+  text-align: center;
+  padding: 16px;
+}
+
+#menu a, #menu span {
+  border: 1px dotted #c1c1c1;
+  border-radius: 6px;
+  padding: 12px 24px 12px 24px;
+  box-shadow: 12px 12px 2px 1px lightgrey;
+}
+
+#menu a {
+  color: black;
+  background-color: #f8f8f8;
+  transition: all 1s;
+}
+
+#menu a:hover {
+  color: white;
+  background-color: black;
+  transition: all 1s;
+  box-shadow: 6px 6px 2px 1px darkgrey;
+}
+
+#menu span {
+  background-color: #4b0f68;
+  color: #dbd0ff;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 6px 6px 2px 1px #dbd0ff;
+}
+
+h3 {
+  width: 100%;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
