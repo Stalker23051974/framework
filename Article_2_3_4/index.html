@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My twelfth page</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<div class="green"></div><hr>
+<i name="tag_i">Что-то написанное курсивом</i><hr>
+<b>Что-то написанное курсивом</b><hr>
+<span id="id_span">Строчный блок с ID</span><hr>
+<table border="1">
+<tr>
+    <th>Заголовок 1</th>
+    <th>Заголовок 2</th>
+</tr>
+    <tr>
+        <td>Ячейка 1 - 1</td>
+        <td>Ячейка 1 - 2</td>
+    </tr>
+    <tr>
+        <td>Ячейка 2 - 1</td>
+        <td>Ячейка 2 - 2</td>
+    </tr>
+    <tr>
+        <td>Ячейка 3 - 1</td>
+        <td>Ячейка 3 - 2</td>
+    </tr>
+</table>
+</body>
+<footer>
+    <script language="JavaScript">
+        console.log(document.getElementById('id_span'));
+        console.log(document.getElementsByName('tag_i'));
+        console.log(document.getElementsByClassName('green'));
+        console.log(document.getElementsByTagName('td'));
+        console.log(document.querySelector('th'));
+        console.log(document.querySelectorAll('th'));
+        console.log(document.querySelectorAll('[name="tag_i"]'));
+    </script>
+</footer>
+</html>
