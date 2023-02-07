@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eleventh page</title>
+</head>
+<body>
+</body>
+<footer>
+    <script>
+      var a = [10, 11, 12, 13, 14, 15];
+      var i;
+      var global = 1;
+      var newArray = [];
+
+      // Пример с передачей параметров в функцию
+      for (i in a) if (a.hasOwnProperty(i)) {
+        myFirstFunction(i, a[i]);
+      }
+
+      function myFirstFunction(key, value)
+      {
+        console.log('Элемент массива ' + key + ' равен ' + value);
+      }
+
+      // Пример с использованием глобальной переменной
+      for (i = 0; i < 10; i++) {
+        mySecondFunction();
+      }
+
+      function mySecondFunction()
+      {
+        global = global * 10;
+        console.log('Глобальная переменная равна ' + global);
+      }
+
+      // Пример с возвращаемым результатом от функции
+      for (i in a) if (a.hasOwnProperty(i)) {
+        newArray.push(myThirdFunction(i, a[i]));
+      }
+      console.log(newArray);
+
+      function myThirdFunction(key, value)
+      {
+        var result = key * 10;
+        result = result + value;
+        return result;
+      }
+
+      // Пример с объявлением метода у объекта
+      var object = {value: 1234567891};
+      object.calculate = function ()
+      {
+        this.value = this.value / 3;
+      };
+      console.log('object.value = ' + object.value);
+      object.calculate();
+      console.log('new object.value = ' + object.value);
+
+      // Дополнительные примеры объявления
+      var func = function ()
+      {
+        console.log('Вызов функции func');
+      };
+      var funcArray = [
+        function ()
+        {
+          console.log('Вызов функции #0 из массива funcArray');
+        },
+        function ()
+        {
+          console.log('Вызов функции #1 из массива funcArray');
+        },
+        function ()
+        {
+          console.log('Вызов функции #2 из массива funcArray');
+        }
+      ];
+      console.log('Пример вызова:');
+      func();
+      funcArray[0]();
+      funcArray[1]();
+      funcArray[2]();
+      console.log('Пример использования массива функций в зависимости от значения:');
+      for (i = 0; i < 10; i++) {
+        funcArray[i % 3]();
+      }
+    </script>
+</footer>
+</html>
